@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css')}}">
+</head>
+<body>
+    <h3 style="color: blueviolet;">Numbers entered: </h3>
+    <p>{{numbers}}</p>
+    <h3 style="color:blueviolet">Solution</h3>
+    <p>{{res}}</p>
+    <img src="data: image/png;base64, {{picture}}" alt="plot">
+
+</body>
+</html> 

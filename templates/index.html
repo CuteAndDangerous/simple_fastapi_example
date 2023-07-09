@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page!</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <h3 class="animated-message">{{ message }}</h3>
+    
+    <p>Solve quadratic equations</p>
+
+
+    <form action="/solve" method="post", 
+                enctype="multipart/form-data">
+        Enter a, b, and c comma separated: <br>
+        <input type="text" name="numbers"> <br>
+
+
+        <button type="submit">Solve!</button>
+    </form>
+
+</body>
+</html>
